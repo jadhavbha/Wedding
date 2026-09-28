@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>EverAfter | Wedding Management System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader"><div class="loader-ring"></div><p>Creating your perfect beginning…</p></div>
+<header class="navbar"><a class="brand" href="index.html"><span>✦</span> EverAfter</a>
+<button class="menu-btn" id="menuBtn">☰</button>
+<nav id="nav"><a href="#home">Home</a><a href="#services">Services</a><a href="#venues">Venues</a><a href="#packages">Packages</a><a href="booking.html">Booking</a><a href="#contact">Contact</a></nav>
+<div class="nav-actions" id="authLinks"><a class="btn ghost" href="login.html">Login</a><a class="btn" href="signup.html">Sign Up</a></div></header>
+
+<main>
+<section class="hero" id="home"><div class="petals">✦　❀　✧　❀　✦</div><div class="hero-content reveal">
+<p class="eyebrow">WEDDING MANAGEMENT SYSTEM</p><h1>Plan your <em>perfect</em><br>beginning.</h1>
+<p>Everything you need to create an unforgettable wedding — from elegant venues to curated packages and intelligent budget planning.</p>
+<div class="hero-actions"><a class="btn" href="booking.html">Plan My Wedding <span>→</span></a><a class="btn ghost" href="#venues">Explore Venues</a></div>
+<div class="trust"><span>♥</span> Built for modern couples <span>•</span> Simple, elegant &amp; smart</div></div>
+<div class="hero-card reveal"><div class="floating-card"><span>YOUR DREAM DAY</span><strong>Beautifully planned.</strong><small>Venue · Food · Decor · Memories</small></div></div></section>
+
+<section class="stats"><div><strong data-count="500">0</strong><span>Happy Couples</span></div><div><strong data-count="50">0</strong><span>Premium Venues</span></div><div><strong data-count="100">0</strong><span>Wedding Services</span></div><div><strong data-count="10">0</strong><span>Years Experience</span></div></section>
+
+<section class="section" id="services"><div class="section-head reveal"><p class="eyebrow">EVERY DETAIL MATTERS</p><h2>Services made for <em>your</em> story</h2><p>Choose the essentials and add the details that make your celebration yours.</p></div>
+<div class="grid cards" id="serviceGrid"></div></section>
+
+<section class="section alt" id="venues"><div class="section-head reveal"><p class="eyebrow">FIND YOUR PLACE</p><h2>Venues worth saying <em>“I do”</em> in</h2><p>Elegant spaces for intimate ceremonies and grand celebrations.</p></div>
+<div class="filter-row"><input id="venueSearch" placeholder="Search venues or locations…"><select id="venueSort"><option value="featured">Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="rating">Top Rated</option></select></div>
+<div class="grid cards" id="venueGrid"></div></section>
+
+<section class="section" id="packages"><div class="section-head reveal"><p class="eyebrow">CHOOSE YOUR EXPERIENCE</p><h2>Packages designed to <em>delight</em></h2></div><div class="grid package-grid" id="packageGrid"></div></section>
+
+<section class="countdown-wrap"><div class="countdown-inner"><p class="eyebrow">THE BIG DAY</p><h2>Your forever begins in…</h2><div class="countdown" id="countdown"><div><b id="days">--</b><span>Days</span></div><div><b id="hours">--</b><span>Hours</span></div><div><b id="mins">--</b><span>Minutes</span></div><div><b id="secs">--</b><span>Seconds</span></div></div><a class="btn" href="booking.html">Create My Wedding Plan</a></div></section>
+
+<section class="section contact" id="contact"><div class="section-head"><p class="eyebrow">LET'S TALK</p><h2>Start planning your <em>beautiful</em> day</h2></div><form id="contactForm" class="form-card"><div class="form-grid"><label>Name<input name="name" required></label><label>Email<input name="email" type="email" required></label><label>Phone<input name="phone" required pattern="[0-9]{10}"></label><label>Message<textarea name="message" rows="4" required></textarea></label></div><button class="btn">Send Message →</button></form></section>
+</main>
+<footer><div class="brand">✦ EverAfter</div><p>Wedding Management System · A premium academic project</p><p>© 2026 EverAfter</p></footer>
+<div id="toast"></div><div class="modal" id="modal"><div class="modal-box"><button class="modal-close">×</button><div id="modalContent"></div></div></div>
+<script src="js/data.js"></script><script src="js/app.js"></script>
+</body></html>
